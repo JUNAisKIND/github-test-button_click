@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alertWindowClas.css">
+    <title>Document</title>      
+        
+</head>
+<body style="width: 100px;">
+
+    <button onclick="openAlert();">button</button>
+    <div class="box" id="alert_box">
+        <h1 class="head-text" style="margin-bottom: 10px;">JU.NA</h1>
+        <div class="inline-block">
+            <br>
+            <h3>간편 로그인</h3>
+            <div class="click-button blue" id="click_button_facebook" style="margin-bottom: 10px;">
+                <p class="center-text">페이스북</p>
+            </div>
+            <div class="click-button green" id="click_button_naver" style="margin-bottom: 20px;">
+                <p class="center-text">네이버</p>
+            </div>
+            <div class="text-or" style="margin-bottom: 20px;">OR</div>
+            <p style="margin-bottom: 40px;">이메일 로그인</p>
+            <div style="position: relative;">
+                <input id="input-id" type="text" autocomplete="off" class="input-id">
+                <label for="input-id" id="input-id-label" class="text-label">이메일 주소</label>
+                <br><br>
+                <input id="input-password" type="password" autocomplete="off" class="input-id">
+                <label for="input-password" id="input-password-label" class="text-label">비밀번호</label>    
+                                          
+                <div class="password-visible" id="password-visible"></div>
+            </div>
+            <br><br><br>
+            <div class="click-button aqua" id="click_button_login" style="margin-bottom: 20px;">
+                <p class="center-text">로그인</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="codes.js"></script>
+   
+
+</body>
+</html>

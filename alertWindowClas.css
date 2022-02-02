@@ -1,0 +1,123 @@
+.box {
+
+    display: none;
+    border: 5px #383838 solid;
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    background: white;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    font-family: "teen";
+
+    user-select: none;
+    user-zoom: none;
+}
+
+@font-face {
+    font-family: "teen";
+    src: url("teen.ttf")
+}
+
+.head-text {
+    text-align: center;
+    color: rgb(0, 214, 214);
+}
+
+.inline-block {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.click-button {
+    height: 40px;
+}
+
+.green {
+    border: 5px rgb(28, 151, 28) solid;
+    background: rgb(34, 173, 34);
+}
+
+.aqua {
+    border: 5px rgb(28, 151, 145) solid;
+    background: rgb(38, 192, 171);
+}
+
+.blue {
+    border: 5px rgb(28, 92, 151) solid;
+    background: rgb(38, 117, 192);
+}
+
+.center-text {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.text-or {
+    color: gray;
+    text-align: center;
+}
+
+.text-or:after, .text-or::before {
+    position: absolute;
+    background: gray;
+    width: 150px;
+    height: 2px;
+    top:287.5px;
+    display: block;
+    content: " ";
+}
+.text-or::before {
+    left: 25px;
+}
+.text-or::after {
+    right: 25px;
+}
+
+.input-id {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    position: absolute;
+    font-family: "teen";
+    border-bottom: 1px black solid;
+    width: 100%;
+    color: gray;
+}
+
+.input-id:focus {
+    border-bottom: 1px rgb(0, 165, 180) solid;
+}
+
+.text-label {
+    color: gray;
+    position: absolute;
+    width: 350px;
+    transition: all .2s;
+}
+.text-label-value {
+    color: rgb(0, 165, 180);
+    position: absolute;
+    width: 350px;
+    font-size: 4pt;
+    transform: translateY(-130%);
+    transition: all .1s;
+}
+.password-visible {
+    display: none;
+    background: red;
+    position: absolute;
+    right: 20px;
+}
+
+.password-visible::after {
+    content: "👁‍🗨";
+    font-size: 15pt;
+    position: absolute;
+    transform: translateY(-50%);
+}
