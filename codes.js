@@ -39,5 +39,5 @@ $("input[id^='input-']").keypress(function(event) {
 });
 //비밀번호 보기 버튼 클릭시 Input type을 password or text로 투글
 $("#password-visible").click(function() {
-   $("#input-password").attr("type", ($("#input-password").attr("type") == "text") ? "password" : "text");
+    $("#input-password").attr("type", ($("#input-password").attr("type") == "text") ? "password" : "text");
 })
